@@ -16,12 +16,16 @@ How to use API:
 
 
 To view order history:
-1. Go to localhost:8000/history/<insert id here>
+1. Go to localhost:8000/history/{insert id here}
 
 To make an order:
-1. endpoint is localhost:8000/order/<insert id here>
-1. Make a post request with the following fields:
+1. endpoint is localhost:8000/order/{insert id here}
+2. Make a post request with the following fields:
 	symbol, amount, price, side(buy or sell), type(exchange or stop limit)
+
+
+
+
 ex.
 curl -X POST localhost:8000/order/01cd9c0e-f025-11ec-9089-1e003902ca29 -H 'Content-Type: application/json' -d '{"symbol": "ethusd",
     "amount": "1",
